@@ -1,0 +1,69 @@
+		.navbar-inverse{
+			background-color: rgba(169, 178, 183, 0.57);
+			border-color: rgba(169, 178, 183, 0.57);
+			border-radius: 0px;
+			}
+		.navbar-inverse .navbar-nav>li>a {
+	    	color: #ffffff;
+			}
+		.navbar-inverse .navbar-brand {
+	    	color: #ffffff;
+	    	}
+		.navbar{
+			
+
+			}
+		.navbar-inverse .navbar-toggle {
+    		border-color: #608787;
+			}
+		.container-fluid{
+			margin: 0px;
+			padding: 0px;
+			}
+		.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	    	margin-left: 10px;
+			}
+			.navbar-right{
+				margin-right: 10px;
+			}
+		#container0{
+			background-color: 015048;
+			min-height: 50px;
+		}	
+		.dropdown-menu{
+			background-color: rgba(169, 178, 183, 0.77);
+		}
+		.dropdown-menu>li>a {
+		    display: block;
+		    padding: 3px 20px;
+		    clear: both;
+		    font-weight: 400;
+		    line-height: 1.42857143;
+		    color: #fff;
+		    white-space: nowrap;
+		}
+		#container0.1{
+			height: 300px;
+		}
+		#teamvector{
+			max-height: 400px;
+			margin:10px;
+		}
+		#teamvectordescription{
+			font-family: 'roboto','sans-serif';
+			margin-top: 140px;
+			font-size: 1.5em;
+		}
+		body{
+			width: 100%;
+			background-color: rgb(230, 230, 230);
+		}
+		.row{
+			margin: 0px;
+			margin-top: 140px;
+			margin-bottom: 240px;
+		}
+		#android,#ios,#windowsphone{
+			max-height: 250px;
+			visibility: hidden;
+		}
