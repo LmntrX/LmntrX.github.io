@@ -1,96 +1,101 @@
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-		<!-- Roboto Google Font API -->
-		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-		<!--//Bootstrap CDN MAXCDN-->
-		<link rel="stylesheet" href="./css/bootstrap.min.css">
-		<script src="./js/jquery.min.js"></script>
-		<script src="./js/bootstrap.min.js"></script>
-		<!--//W3.CSS W3CDN-->
-		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-		<!-- Animate.css -->
-		<link rel="stylesheet" href="./css/animate.css">
-		<!-- Style.css -->
-		<link rel="stylesheet" href="./css/style.css">
-		<!-- Title -->
-		<title>LmntrX</title>
-	</head>
-	<body>
-	<div class="container-fluid" id="container0">
-	</div>
-	
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">LmntrX</a>
-				</div>
-		
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="./"><img src="./images/iconhome.png" id="iconnavbar">&nbsp Home</a></li>
-							<li><a href="./services"><img src="./images/iconprojects.png" id="iconnavbar">&nbspServices</a></li>
-							<li><a href="#"><img src="./images/iconteam.png" id="iconnavbar">&nbsp Team</a></li>
-							<li><a href="#"><img src="./images/iconcontact.png" id="iconnavbar">&nbsp Contact</a></li>
-						</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-				
-			</div>
-		</nav>
-				
-			<div class="container-fluid">
-			<div class="row" align="center" id="rowhome">
-				<div class=" col-sm-4">
-					<img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="teamvector">
-				</div>
-				<div class="col-sm-8">
-					<p class="animated " id ="teamvectordescription">
-						We <strong>Design</strong>, <strong>Build</strong> and <strong>Share</strong>, the coolest apps in the Solar System. Our areas of practice is Web and Android Developing and Designing.  Our motto is to <strong>Evolve</strong> experience from <strong>Ideas</strong> and with a <strong>Goal</strong>, to make life easy and work efficiently.</p>
-				</div>
-			</div>
-			<div class="row" align="center" id="rowhome" class="animated">					
-				<div class=" col-sm-4">
-					<img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="android">
-				</div>
-				<div class=" col-sm-4">
-					<img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="ios">
-				</div>
-				<div class=" col-sm-4">
-					<img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="windowsphone">
-				</div>
-			</div>
-		</div>
 
-	</body>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#teamvector").addClass('fadeInLeft');
-			$("#teamvectordescription").addClass('fadeInRight');
-			
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript">
+    $(window).load(function() {
+        $("body").fadeIn(5000);
+    });
+    </script>
+    <title>LmntrX</title>
+</head>
 
-			$(window).scroll(function(event){
-				var y=$(this).scrollTop();
-				if(y>=300){
-					$("#android").addClass("slideInUp").css("visibility", "visible");
-					setTimeout(function(){ 
-						$("#ios").addClass("slideInUp").css("visibility", "visible");
-					}, 200);
-					setTimeout(function(){ 
-						$("#windowsphone").addClass("slideInUp").css("visibility", "visible");
-					}, 400);
+<body>
+    <div class="container-fluid" id="container0">
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">LmntrX</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="./"><img src="./images/iconhome.png" id="iconnavbar">&nbsp Home</a>
+                    </li>
+                    <li>
+                        <a href="./services"><img src="./images/iconprojects.png" id="iconnavbar">&nbspServices</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/iconteam.png" id="iconnavbar">&nbsp Team</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/iconcontact.png" id="iconnavbar">&nbsp Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" align="center" id="rowhome">
+            <div class=" col-sm-4">
+                <img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="teamvector">
+            </div>
+            <div class="col-sm-8">
+                <p class="animated " id="teamvectordescription">
+                    We <strong>Design</strong>, <strong>Build</strong> and <strong>Share</strong>, the coolest apps in the Solar System. Our areas of practice is Web and Android Developing and Designing. Our motto is to <strong>Evolve</strong> experience from <strong>Ideas</strong> and with a <strong>Goal</strong>, to make life easy and work efficiently.</p>
+            </div>
+        </div>
+        <div class="row" align="center" id="rowhome" class="animated">
+            <div class=" col-sm-4">
+                <img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="android">
+            </div>
+            <div class=" col-sm-4">
+                <img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="ios">
+            </div>
+            <div class=" col-sm-4">
+                <img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="windowsphone">
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#teamvector").addClass('fadeInLeft');
+    $("#teamvectordescription").addClass('fadeInRight');
 
-				}
-			});
 
-		});
-	</script>
+    $(window).scroll(function(event) {
+        var y = $(this).scrollTop();
+        if (y >= 300) {
+            $("#android").addClass("slideInUp").css("visibility", "visible");
+            setTimeout(function() {
+                $("#ios").addClass("slideInUp").css("visibility", "visible");
+            }, 200);
+            setTimeout(function() {
+                $("#windowsphone").addClass("slideInUp").css("visibility", "visible");
+            }, 400);
+
+        }
+    });
+
+});
+</script>
+
 </html>
