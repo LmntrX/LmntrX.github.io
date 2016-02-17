@@ -9,9 +9,14 @@
 		.navbar-inverse .navbar-brand {
 	    	color: #ffffff;
 	    	}
-		.navbar{
-			
+			.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+				color: #608787;
+				background-color: #e6ed7f;
+			  	font-weight: bold;
 
+			}
+			.navbar-inverse .navbar-nav>li>a:hover {
+			  background-color: rgba(210, 237, 127, 0.32);
 			}
 		.navbar-inverse .navbar-toggle {
     		border-color: #608787;
@@ -141,4 +146,3 @@
 		    display: none;
 		  }
 		}
-
