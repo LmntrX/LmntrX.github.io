@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript">
+    $(window).load(function() {
+        $("body").fadeIn(5000);
+    });
+    </script>
+    <title>LmntrX</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="container0">
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">LmntrX</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../"><img src="../images/iconhome.png" id="iconnavbar">&nbsp Home</a>
+                    </li>
+                    <li>
+                        <a href="../services"><img src="../images/iconprojects.png" id="iconnavbar">&nbsp Services</a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><img src="../images/iconteam.png" id="iconnavbar">&nbsp Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+    </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#teamvector").addClass('fadeInLeft');
+    $("#teamvectordescription").addClass('fadeInRight');
+    $(window).scroll(function(event) {
+        var y = $(this).scrollTop();
+        if (y >= 300) {
+            $("#android").addClass("slideInUp").css("visibility", "visible");
+            setTimeout(function() {
+                $("#ios").addClass("slideInUp").css("visibility", "visible");
+            }, 200);
+            setTimeout(function() {
+                $("#windowsphone").addClass("slideInUp").css("visibility", "visible");
+            }, 400);
+
+
+        }
+    });
+
+    phoneloop();
+
+});
+
+function phoneloop() {
+    $('#insidephoneart').fadeOut(1000, function() {
+        var src = $(this).attr("src").replace("./images/android.png", "./images/windowsphone.png");
+        $(this).attr("src", src);
+    }).fadeIn(1000).fadeOut(1000, function() {
+        var src = $(this).attr("src").replace("./images/windowsphone.png", "./images/ios.png");
+        $(this).attr("src", src);
+    }).fadeIn(1000).fadeOut(1000, function() {
+        var src = $(this).attr("src").replace("./images/ios.png", "./images/android.png");
+        $(this).attr("src", src);
+    }).fadeIn(1000).fadeOut(1000, phoneloop());
+}
+</script>
+
+</html>
