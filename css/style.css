@@ -180,19 +180,32 @@
 		    padding: 10px;
 		}
 		
-		.us {
-		    width: 25%;
-		    display: inline-block;
-		    margin: 2%;
-		}
-		
 		.us h1 {
 		    font-size: 90%;
 		}
 		
 		.us h1 strong {
-		    font-size: 170%;
+		    font-size: 130%;
 		    font-weight: normal;
+		}
+		
+		.us img {
+		    width: 100% ! important;
+		    /*margin-bottom: 3%*/
+		}
+		
+		.us,
+		.w3-container {
+		    padding-left: 0px !important;
+		    padding-right: 0px !important;
+		    padding-bottom: 0px !important;
+		    margin: 1px;
+		}
+		
+		.us {
+		    width: 25%;
+		    display: inline-block;
+		    margin-top: 3%;
 		}
 		/*Time line*/
 		
