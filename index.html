@@ -1,36 +1,96 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+		<!-- Roboto Google Font API -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<!--//Bootstrap CDN MAXCDN-->
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<!--//W3.CSS W3CDN-->
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="./css/animate.css">
+		<!-- Style.css -->
+		<link rel="stylesheet" href="./css/style.css">
+		<!-- Title -->
+		<title>LmntrX</title>
+	</head>
+	<body>
+	<div class="container-fluid" id="container0">
+	</div>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">LmntrX</a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="./index.html"><img src="./images/iconhome.png" id="iconnavbar">&nbsp Home</a></li>
+							<li><a href="./services.html"><img src="./images/iconprojects.png" id="iconnavbar">&nbspServices</a></li>
+							<li><a href="#"><img src="./images/iconteam.png" id="iconnavbar">&nbsp Team</a></li>
+							<li><a href="#"><img src="./images/iconcontact.png" id="iconnavbar">&nbsp Contact</a></li>
+						</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+				
+			</div>
+		</nav>
+				
+			<div class="container-fluid">
+			<div class="row" align="center" id="rowhome">
+				<div class=" col-sm-4">
+					<img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="teamvector">
+				</div>
+				<div class="col-sm-8">
+					<p class="animated " id ="teamvectordescription">
+						We <strong>Design</strong>, <strong>Build</strong> and <strong>Share</strong>, the coolest apps in the Solar System. Our areas of practice is Web and Android Developing and Designing.  Our motto is to <strong>Evolve</strong> experience from <strong>Ideas</strong> and with a <strong>Goal</strong>, to make life easy and work efficiently.</p>
+				</div>
+			</div>
+			<div class="row" align="center" id="rowhome" class="animated">					
+				<div class=" col-sm-4">
+					<img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="android">
+				</div>
+				<div class=" col-sm-4">
+					<img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="ios">
+				</div>
+				<div class=" col-sm-4">
+					<img src="./images/team.jpg" class="img-responsive animated" alt="Lmntrx" id="windowsphone">
+				</div>
+			</div>
+		</div>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#teamvector").addClass('fadeInLeft');
+			$("#teamvectordescription").addClass('fadeInRight');
+			
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+			$(window).scroll(function(event){
+				var y=$(this).scrollTop();
+				if(y>=300){
+					$("#android").addClass("slideInUp").css("visibility", "visible");
+					setTimeout(function(){ 
+						$("#ios").addClass("slideInUp").css("visibility", "visible");
+					}, 200);
+					setTimeout(function(){ 
+						$("#windowsphone").addClass("slideInUp").css("visibility", "visible");
+					}, 400);
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+				}
+			});
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+		});
+	</script>
 </html>
