@@ -367,7 +367,3 @@
 		    text-decoration: none;
 		    color: black;
 		}
-		#teampic{
-		max-height:512px;
-		max-width:512px;		
-		}

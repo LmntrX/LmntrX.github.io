@@ -61,7 +61,7 @@
                 <h1><strong>Livin Mathew</strong><br>Business Head</h1>
             </header>
             <div class="w3-container">
-                <img src="../images/us/livin.jpg" id="teampic">
+                <img src="../images/us/livin.jpg">
                 <br>
             </div>
         </div>
@@ -70,7 +70,7 @@
                 <h1><strong>Britto Saji</strong><br>Frameworks Specialist</h1>
             </header>
             <div class="w3-container">
-                <img src="../images/us/britto.jpg" id="teampic">
+                <img src="../images/us/britto.jpg" style="max-height:512px;max-width:512px">
                 <br>
             </div>
         </div>
@@ -79,7 +79,7 @@
                 <h1><strong>Soolu Thomas</strong><br>Customer Service Relations</h1>
             </header>
             <div class="w3-container">
-                <img src="../images/us/soosoo.jpg" id="teampic">
+                <img src="../images/us/soosoo.jpg">
                 <br>
             </div>
         </div>
@@ -88,7 +88,7 @@
                 <h1><strong>Nihal Ismail</strong><br>Mobile Tech Lead</h1>
             </header>
             <div class="w3-container">
-                <img src="../images/us/nihal.jpg" id="teampic">
+                <img src="../images/us/nihal.jpg">
                 <br>
             </div>
         </div>
@@ -97,7 +97,7 @@
                 <h1><strong>Tony Wilson</strong><br>DevOps Manager</h1>
             </header>
             <div class="w3-container">
-                <img src="../images/us/tony.jpg" id="teampic">
+                <img src="../images/us/tony.jpg">
                 <br>
             </div>
         </div>
@@ -106,7 +106,7 @@
                 <h1><strong>Basil Arackal</strong><br>Tech Head</h1>
             </header>
             <div class="w3-container">
-                <img src="../images/us/me.jpg" id="teampic">
+                <img src="../images/us/me.jpg">
             </div>
         </div>
     </div>
