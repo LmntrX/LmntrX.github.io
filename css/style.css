@@ -134,7 +134,7 @@
 		
 		#rowhome {
 		    margin-top: 140px;
-		    margin-bottom: 340px;
+		    margin-bottom: 100px;
 		}
 		
 		#serviceartright {
@@ -178,6 +178,21 @@
 		    height: 70px;
 		    display: inline;
 		    padding: 10px;
+		}
+		
+		.us {
+		    width: 25%;
+		    display: inline-block;
+		    margin: 2%;
+		}
+		
+		.us h1 {
+		    font-size: 90%;
+		}
+		
+		.us h1 strong {
+		    font-size: 170%;
+		    font-weight: normal;
 		}
 		/*Time line*/
 		
